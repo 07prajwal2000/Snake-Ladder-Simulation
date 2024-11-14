@@ -47,7 +47,7 @@ function game() {
     if (currentPlayer.position in snakes) {
       currentPlayer.position = snakes[currentPlayer.position];
     } else if (currentPlayer.position in ladders) {
-      currentPlayer.position == ladders[currentPlayer.position];
+      currentPlayer.position = ladders[currentPlayer.position];
     } else if (currentPlayer.position > 100) {
       currentPlayer.position = prevPos;
     } else if (currentPlayer.position == 100) break;
